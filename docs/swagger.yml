@@ -209,7 +209,7 @@ paths:
             description: |
                 Create a new thought
             parameters:
-                - title: data
+                - name: data
                   in: body
                   description: json body data to create new thought
                   required: true
