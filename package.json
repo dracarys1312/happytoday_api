@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thanhson1085/api-seed.git"
+    "url": "git+https://github.com/dracarys1312/happytoday_api.git"
   },
   "keywords": [
     "expresjs",
@@ -17,9 +17,9 @@
   "author": "Nguyen Sy Thanh Son",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thanhson1085/api-seed/issues"
+    "url": "https://github.com/dracarys1312/happytoday_api/issues"
   },
-  "homepage": "https://github.com/thanhson1085/api-seed#readme",
+  "homepage": "https://github.com/dracarys1312/happytoday_api#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
     "config": "^1.19.0",
@@ -27,6 +27,7 @@
     "express": "^4.13.4",
     "js-yaml": "^3.5.5",
     "mongoose": "^4.4.11",
+    "mongoose-timestamp" : "^0.6.0",
     "swagger-editor": "^2.9.9",
     "winston": "^2.2.0"
   }
