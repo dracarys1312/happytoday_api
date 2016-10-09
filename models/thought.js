@@ -6,7 +6,7 @@ var CreateUpdatedAt = require('mongoose-timestamp');
 
 // Define User Schema
 var Thought = new Schema({
-    Title: {
+    title: {
         type: String,
         require: true
     },

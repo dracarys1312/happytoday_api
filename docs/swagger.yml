@@ -5,7 +5,7 @@ info:
     version: '1.0.0'
 schemes:
     - http
-basePath: /api/v1
+basePath: /api/
 produces:
     - application/json
 securityDefinitions:
@@ -209,27 +209,21 @@ paths:
             description: |
                 Create a new thought
             parameters:
-                - name: data
+                - title: data
                   in: body
                   description: json body data to create new thought
                   required: true
                   schema:
                       required:
-                          - name
+                          - title
                           - description
                       properties:
-                          name:
+                          title:
                               type: string
                               description: Name
                           description:
                               type: string
                               description: Description of Thought
-                          amount:
-                              type: number
-                              description: Amount
-                          in_stock:
-                              type: boolean
-                              description: In stock or not?
             responses:
                 200:
                     description: Returns a access token
