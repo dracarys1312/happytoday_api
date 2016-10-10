@@ -242,8 +242,6 @@ paths:
             summary: Get list of thought
             description: |
                 Get list of thought with page and limit
-            security:
-                - Bearer: []
             parameters:
                 - name: page
                   in: path
@@ -270,13 +268,29 @@ paths:
                     description: Server Internal error
             tags:
                 - Thoughts
+    /thoughts/getAll:
+        get:
+            summary: Get all thoughts
+            description: |
+                Get all thoughts
+            responses:
+                200:
+                    description: OK
+                401:
+                    description: Unauthorized
+                400:
+                    description: Bad Request
+                406:
+                    description: Not Acceptable
+                500:
+                    description: Server Internal error
+            tags:
+                - Thoughts
     /thoughts/get/{id}:
         get:
             summary: Get a thought
             description: |
                 Get a thought by Id
-            security:
-                - Bearer: []
             parameters:
                 - name: id
                   in: path
